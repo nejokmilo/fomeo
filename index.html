@@ -3,17 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>En Construcción</title>
+  <title>fomeo.cl</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
 
   <style>
     :root {
       --bg: #1e1033;
-      --accent: #7c3aed;
+      --accent: #8b5cf6;
       --text: #ffffff;
+      --border: rgba(255,255,255,.10);
     }
 
     * {
@@ -27,39 +34,115 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       background:
         radial-gradient(
           circle at center,
-          rgba(124, 58, 237, 0.20) 0%,
-          rgba(124, 58, 237, 0.08) 30%,
+          rgba(139, 92, 246, .18) 0%,
+          rgba(139, 92, 246, .08) 30%,
           transparent 70%
         ),
         var(--bg);
+
       color: var(--text);
       font-family: "Inter", sans-serif;
-      overflow: hidden;
+      padding: 2rem;
+    }
+
+    .container {
+      text-align: center;
     }
 
     h1 {
-      font-size: clamp(2rem, 8vw, 6rem);
-      font-weight: 300;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-align: center;
-      white-space: nowrap;
-      padding: 0 1rem;
-      text-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+      font-size: clamp(4rem, 12vw, 7rem);
+      font-weight: 700;
+      letter-spacing: -0.06em;
+
+      text-shadow:
+        0 0 20px rgba(139, 92, 246, .35),
+        0 0 50px rgba(139, 92, 246, .25);
+
+      margin-bottom: 2.5rem;
     }
 
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.9rem;
-        letter-spacing: 0.05em;
-      }
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .socials a {
+      width: 64px;
+      height: 64px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: white;
+      text-decoration: none;
+
+      border-radius: 16px;
+      border: 1px solid var(--border);
+
+      background: rgba(255,255,255,.05);
+
+      transition: all .2s ease;
+    }
+
+    .socials a:hover {
+      transform: translateY(-2px);
+
+      background: rgba(255,255,255,.10);
+
+      border-color: rgba(139, 92, 246, .5);
+
+      box-shadow: 0 0 20px rgba(139, 92, 246, .2);
+    }
+
+    .socials i {
+      font-size: 1.6rem;
     }
   </style>
 </head>
 <body>
-  <h1>En Construcción</h1>
+
+  <main class="container">
+
+    <h1>fomeo.cl</h1>
+
+    <div class="socials">
+
+      <a
+        href="https://youtube.com/@fomeo_tv"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="YouTube"
+      >
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/fomeo.tv"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.facebook.com/fomeo.tv/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+      >
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+    </div>
+
+  </main>
+
 </body>
 </html>
