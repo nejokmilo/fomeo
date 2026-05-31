@@ -100,3 +100,14 @@ h1 {
     height: 56px;
   }
 }
+
+.tagline {
+  max-width: 600px;
+
+  margin: 0 auto 2rem;
+
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.8);
+}
